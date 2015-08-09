@@ -1,0 +1,23 @@
+{
+    "name": "sonko-dmitry/yii2-botan",
+    "description": "Botan.io api component for Yii2",
+    "type": "yii2-extension",
+    "keywords": ["telegram", "botan", "botan.io", "api", "yii", "yii2"],
+    "license": "BSD-3-Clause",
+    "homepage": "http://github.com/SonkoDmitry/yii2-botan",
+    "authors": [
+        {
+            "name": "Sonko Dmitry",
+            "email": "st.difor@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+        "iprit/botan-php": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "SonkoDmitry\\Yii\\Botan\\": "src"
+        }
+    }
+}
