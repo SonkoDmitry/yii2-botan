@@ -31,6 +31,11 @@ Usage
 
 0. Now you can use component
  ```php
- \Yii::$app->botan->track(123, ['text' => 'Hello world!'], 'Message');
+ public function _incomingMessage($message_json) {
+     $messageObj = json_decode($message_json, true);
+     $messageData = $messageObj['message'];
+ 
+     \Yii::$app->botan->track($messageData, 'Start');
+ }
  ```
  Where 123 unique customer ID, for example chat_id or sender_id
